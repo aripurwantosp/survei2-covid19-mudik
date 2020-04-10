@@ -1,0 +1,60 @@
+---
+title: "Survei 2 Aspek Sosial COVID-19:\nPergerakan Mudik/Luar Kota"
+author: "Tim Panel Sosial Kebencanaan"
+date: "10/4/2020"
+output:
+  slidy_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Pergerakan secara agregat
+
+```{r warning=FALSE}
+load(file = "odmat.RData")
+chorddiag::chorddiag(odmat[["Agregat"]], width = 1820, height = 767,
+                     groupnameFontsize = 16)
+```
+
+## Pergerakan dari Jawa Barat
+
+```{r warning=FALSE}
+load(file = "odmat.RData")
+chorddiag::chorddiag(odmat[["Jabar"]], width = 1820, height = 767,
+                     groupnameFontsize = 14)
+```
+
+## Pergerakan dari DKI Jakarta
+
+```{r warning=FALSE}
+load(file = "odmat.RData")
+chorddiag::chorddiag(odmat[["DKI Jakarta"]], width = 1820, height = 767,
+                     groupnameFontsize = 14)
+```
+
+## Pergerakan dari Jawa Timur
+
+```{r warning=FALSE}
+load(file = "odmat.RData")
+chorddiag::chorddiag(odmat[["Jatim"]], width = 1820, height = 767,
+                     groupnameFontsize = 14)
+```
+
+## Pergerakan dari Jawa Tengah
+
+```{r warning=FALSE}
+load(file = "odmat.RData")
+chorddiag::chorddiag(odmat[["Jateng"]], width = 1820, height = 767,
+                     groupnameFontsize = 14)
+```
+
+## Pergerakan dari Banten
+
+```{r warning=FALSE}
+load(file = "odmat.RData")
+chorddiag::chorddiag(odmat[["Banten"]], width = 1820, height = 767,
+                     groupnameFontsize = 14)
+```
+
